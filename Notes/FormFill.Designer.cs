@@ -93,7 +93,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackgroundImage = global::Notes.Properties.Resources._150_Download;
+            this.pictureBox2.BackgroundImage = global::Notes.Properties.Resources.Download_150;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Location = new System.Drawing.Point(444, 12);
@@ -105,7 +105,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::Notes.Properties.Resources._150_Download;
+            this.pictureBox1.BackgroundImage = global::Notes.Properties.Resources.Download_150;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Location = new System.Drawing.Point(310, 12);
@@ -117,7 +117,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.BackgroundImage = global::Notes.Properties.Resources._150_Download;
+            this.pictureBox3.BackgroundImage = global::Notes.Properties.Resources.Download_150;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.Location = new System.Drawing.Point(310, 146);
@@ -129,7 +129,7 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.BackgroundImage = global::Notes.Properties.Resources._150_Download;
+            this.pictureBox4.BackgroundImage = global::Notes.Properties.Resources.Download_150;
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox4.Location = new System.Drawing.Point(444, 146);

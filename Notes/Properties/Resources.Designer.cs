@@ -63,9 +63,9 @@ namespace Notes.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _150_Download {
+        internal static System.Drawing.Bitmap Download_150 {
             get {
-                object obj = ResourceManager.GetObject("150_Download", resourceCulture);
+                object obj = ResourceManager.GetObject("Download_150", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

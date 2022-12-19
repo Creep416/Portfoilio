@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Creep\\source\\repos\\StudentInfo\\StudentInfo.csproj": {}
+    "C:\\Users\\Creep\\source\\repos\\Portfoilio\\Notes\\StudentInfo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Creep\\source\\repos\\StudentInfo\\StudentInfo.csproj": {
+    "C:\\Users\\Creep\\source\\repos\\Portfoilio\\Notes\\StudentInfo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Creep\\source\\repos\\StudentInfo\\StudentInfo.csproj",
+        "projectUniqueName": "C:\\Users\\Creep\\source\\repos\\Portfoilio\\Notes\\StudentInfo.csproj",
         "projectName": "StudentInfo",
-        "projectPath": "C:\\Users\\Creep\\source\\repos\\StudentInfo\\StudentInfo.csproj",
+        "projectPath": "C:\\Users\\Creep\\source\\repos\\Portfoilio\\Notes\\StudentInfo.csproj",
         "packagesPath": "C:\\Users\\Creep\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Creep\\source\\repos\\StudentInfo\\obj\\",
+        "outputPath": "C:\\Users\\Creep\\source\\repos\\Portfoilio\\Notes\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Creep\\AppData\\Roaming\\NuGet\\NuGet.Config",

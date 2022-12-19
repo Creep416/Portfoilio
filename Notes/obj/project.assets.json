@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Creep\\source\\repos\\StudentInfo\\StudentInfo.csproj",
-      "projectName": "StudentInfo",
-      "projectPath": "C:\\Users\\Creep\\source\\repos\\StudentInfo\\StudentInfo.csproj",
+      "projectUniqueName": "C:\\Users\\Creep\\source\\repos\\Portfoilio\\Notes\\Notes.csproj",
+      "projectName": "Notes",
+      "projectPath": "C:\\Users\\Creep\\source\\repos\\Portfoilio\\Notes\\Notes.csproj",
       "packagesPath": "C:\\Users\\Creep\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Creep\\source\\repos\\StudentInfo\\obj\\",
+      "outputPath": "C:\\Users\\Creep\\source\\repos\\Portfoilio\\Notes\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Creep\\AppData\\Roaming\\NuGet\\NuGet.Config",
