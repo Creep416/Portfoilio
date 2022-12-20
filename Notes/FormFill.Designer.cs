@@ -53,7 +53,7 @@
             this.saveButton.TabIndex = 0;
             this.saveButton.Text = "Сохранить";
             this.saveButton.UseVisualStyleBackColor = true;
-            this.saveButton.MouseDown += new System.Windows.Forms.MouseEventHandler(this.saveButton_Click);
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
             // cancelButton
             // 
@@ -65,7 +65,7 @@
             this.cancelButton.TabIndex = 0;
             this.cancelButton.Text = "Отменить";
             this.cancelButton.UseVisualStyleBackColor = true;
-            this.cancelButton.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cancelButton_Click);
+            this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
             // 
             // textName
             // 

@@ -21,15 +21,17 @@ namespace Notes
         int number = 0;
 		private void FormSelect_Load(object sender, EventArgs e)
 		{
-            StreamReader rd = new StreamReader("C:\\Users\\Creep\\source\\repos\\Notes\\Base\\Base.txt");
+            StreamReader rd = new StreamReader("C:\\Users\\Creep\\source\\repos\\Portfoilio\\Notes\\Base\\Base.txt");
             DataSet ds = new DataSet();
-            ds.Tables.Add("Score");
+            ds.Tables.Add("TableStore");
+            ds.Tables[0].Columns.Add("Номер заметки");
             ds.Tables[0].Columns.Add("Название заметки");
             string row = rd.ReadLine();
             while (row != null)
             {
                 string[] rvalue = System.Text.RegularExpressions.Regex.Split(row, ";");
                 ds.Tables[0].Rows.Add(rvalue[0]);
+                ds.Tables[0].Rows.Add(rvalue[1]);
                 row = rd.ReadLine();
             }
             dataGridView1.DataSource = ds.Tables[0];
@@ -46,6 +48,11 @@ namespace Notes
         private void openButton_MouseUp(object sender, MouseEventArgs e)
         {
             textBox1.Text = Convert.ToString(number);
+        }
+
+        private void textBoxSearch_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
         }
     }
 }
