@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Net.Mime.MediaTypeNames;
 using Image = System.Drawing.Image;
+using Notes;
 
 namespace Notes
 {
@@ -19,41 +20,69 @@ namespace Notes
 		public FormFill()
 		{
 			InitializeComponent();
+			bool firstStartName = true;
+			bool firstStartText = true;
 		}
 		private void FormFill_Load(object sender, EventArgs e)
 		{
-			pictureBox1.Image = Image.FromFile("C:\\Users\\Creep\\source\\repos\\Notes\\Resouces\\150_Download.png");
+			pictureBox1.Image = Properties.Resources.Download_150;
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.Image = Image.FromFile("C:\\Users\\Creep\\source\\repos\\Notes\\Resouces\\150_Download.png");
+            pictureBox2.Image = Properties.Resources.Download_150;
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.Image = Image.FromFile("C:\\Users\\Creep\\source\\repos\\Notes\\Resouces\\150_Download.png");
+            pictureBox3.Image = Properties.Resources.Download_150;
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox4.Image = Image.FromFile("C:\\Users\\Creep\\source\\repos\\Notes\\Resouces\\150_Download.png");
+            pictureBox4.Image = Properties.Resources.Download_150;
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
 
         }
 		private void textName_Click(object sender, EventArgs e)
 		{
-			textName.Text = "";
-			textName.ForeColor = System.Drawing.Color.Black;
-
+			if (textName.ForeColor == System.Drawing.Color.Gray)
+			{
+				textName.Text = "";
+				textName.ForeColor = System.Drawing.Color.Black;
+			}
+			
 		}
 		private void textText_Click(object sender, EventArgs e)
 		{
-			textText.Text = "";
-			textText.ForeColor = System.Drawing.Color.Black;
+			if (textText.ForeColor == System.Drawing.Color.Gray)
+			{
+                textText.Text = "";
+                textText.ForeColor = System.Drawing.Color.Black;
+            }
 
 		}
 		private void textName_KeyPress(object sender, KeyPressEventArgs e)
 		{
-			char ch = e.KeyChar;
-			if (ch!=';')
+			if (textName.ForeColor == System.Drawing.Color.Gray)
+			{
+                textName.Text = "";
+                textName.ForeColor = System.Drawing.Color.Black;
+            }
+
+            char ch = e.KeyChar;
+            if (ch ==';')
 			{
 				e.Handled = true;
 			}
 		}
+        private void textText_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (textText.ForeColor == System.Drawing.Color.Gray)
+            {
+                textText.Text = "";
+                textText.ForeColor = System.Drawing.Color.Black;
+            }
 
-		private void cancelButton_Click(object sender, MouseEventArgs e)
+            char ch = e.KeyChar;
+            if (ch == ';')
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void cancelButton_Click(object sender, MouseEventArgs e)
 		{
 			this.Close();
 		}
@@ -112,5 +141,7 @@ namespace Notes
                 pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             }
         }
+
+
     }
 }

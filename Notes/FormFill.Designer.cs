@@ -71,25 +71,27 @@
             // 
             this.textName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textName.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textName.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.textName.ForeColor = System.Drawing.Color.Gray;
             this.textName.Location = new System.Drawing.Point(12, 12);
             this.textName.Name = "textName";
             this.textName.Size = new System.Drawing.Size(292, 25);
             this.textName.TabIndex = 1;
             this.textName.Text = "Название";
             this.textName.Click += new System.EventHandler(this.textName_Click);
+            this.textName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textName_KeyPress);
             // 
             // textText
             // 
             this.textText.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textText.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textText.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.textText.ForeColor = System.Drawing.Color.Gray;
             this.textText.Location = new System.Drawing.Point(12, 41);
             this.textText.Name = "textText";
             this.textText.Size = new System.Drawing.Size(292, 233);
             this.textText.TabIndex = 2;
             this.textText.Text = "Текст";
             this.textText.Click += new System.EventHandler(this.textText_Click);
+            this.textText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textText_KeyPress);
             // 
             // pictureBox2
             // 
@@ -156,10 +158,11 @@
             this.Controls.Add(this.textName);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.saveButton);
-            this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(600, 400);
+            this.MinimumSize = new System.Drawing.Size(600, 400);
             this.Name = "FormFill";
             this.Text = "Редактор заметки";
             this.Load += new System.EventHandler(this.FormFill_Load);

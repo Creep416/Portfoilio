@@ -20,5 +20,10 @@ namespace Notes
             FormSelect f = new FormSelect();
             f.Show();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
